@@ -4,7 +4,7 @@ In this code, we implement a Poisson-Boltzmann solver in a charged nanoslit and 
 
 ![Conductance](figures/fig2_conductance.png)
 
-## The physics behind
+## The physics behind the model
 
 - Combining the Poisson equation with Boltzmann's distribution yields
 
