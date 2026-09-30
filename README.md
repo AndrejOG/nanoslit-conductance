@@ -35,15 +35,9 @@ The plateau G_surf = 2µ+|Σ|(w/L) does not depend on h.
 
 ## Results
 
-#
-
 ![DoubleLayer](figures/fig1_double_layer.png)
 
-#
-
 At h/λ_D = 0.5, we notice the absence of co-ions inside the nanoslit. Indeed, the negative potentials from the walls are added and never fall to zero, which results in a continuous electrostatic barrier. The negatively charged anions are repulsed by the electrostatic field and are thus blocked at the entry of the nanoslit. Subsequently, global electroneutrality imposes the compensation of the negative charge at the gates of the nanoslit, forcing cations to fill it. Therefore the fluid inside the slit becomes a unipolar fluid filled with cations, and applying a voltage at the extremities of the channel will lead to an electric current entirely transported by the present ions. Thus, the slit behaves as a diode or a perfect filter, allowing the circulation of cations and blocking anions.
-
-#
 
 ![Conductance](figures/fig2_conductance.png)
 
@@ -63,17 +57,11 @@ As dhowed by the horizontal axis in the right figure, this parameter condenses a
 
 Finally, on the second curve, we can notice that amidst the transition, the points are slightly under the curve. This is a limit of the theoretical additive model G_vol + G_surf. Indeed, this formula supposes that the volumetric conductance is added independently, as if the channel always kept a constant concentration in salt of n0. In reality, in the transtiion zone (h/l_Du ~= 1), the thickness of the double layers occupies a significant proportion of the channel. The electric field at the walls starts to repulse co-ions towards external reservoirs. Because of this partial exclusion, the channel globally contains less co-ions than what is predicted by the sole addition of a theoretical volume and surface. On the other hand, the solver takes into accound that local ionic rarefaction, explaining the small gap that we observe.
 
-#
-
 ## Limits of the model
-
-#
 
 - We neglected the electro-osmotic convection, meaning that we supposed that water stays perfectly still, where in reality, the movements of the counter-ions cloud caused by the electric field causes the fluid itself to move by viscous friction. That water flow pushes ions, increasing mobility and real surface conductance.
 - The Poisson-Boltzmann equation treats ions as points without volume. At high salinity, the model will predict a density of ions close to the wall that surpasses the physical limit imposed by steric effects.
 - In reality, the charge of a wall like silica is not a constant. It depends on the protonationn or deprotonation of silanol functions following salinity and local pH. That is why the experimentally observed conductance plateau is never fully horizontal.
-
-#
 
 ## Usage
 
