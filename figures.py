@@ -20,7 +20,7 @@ def fig_double_layer():
         x = pb.z / (pb.h / 2)
         line, = ax1.semilogy(x, pb.n_plus / electrolyte.n_0, label=f"$h/\\lambda_D$ = {H}")
         ax1.semilogy(x, pb.n_minus / electrolyte.n_0, "--", color=line.get_color())
-    ax1.set(xlabel="$2z/h$ (0 = centre, 1 = paroi)", ylabel=r"$n_\pm/n_0$", title = "Counter-ions (solid line) and co-ions (dashed line)")
+    ax1.set(xlabel="$2z/h$ (0 = center, 1 = wall)", ylabel=r"$n_\pm/n_0$", title = "Counter-ions (solid line) and co-ions (dashed line)")
     ax1.legend()
 
     h = 60 * lambda_D
@@ -29,7 +29,7 @@ def fig_double_layer():
     ax2.plot(x, pb.psi, lw=3, alpha=0.6, label="Numerical Poisson-Boltzmann")
     ax2.plot(x, gouy_chapman(x, wall_field(SIGMA, electrolyte)), "k--",
              label="Gouy-Chapman (exact)")
-    ax2.set(xlim=(0, 6), xlabel=r"distance à la paroi / $\lambda_D$",
+    ax2.set(xlim=(0, 6), xlabel=r"distance to the wall / $\lambda_D$",
             ylabel=r"$e\phi/k_BT$", title="Validation : isolated wall")
     ax2.legend()
     fig.savefig("figures/fig1_double_layer.png", dpi=200)
