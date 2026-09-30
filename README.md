@@ -65,5 +65,7 @@ Finally, on the second curve, we can notice that amidst the transition, the poin
 
 ## Usage
 
+```bash
 pip install -r requirements.txt
 python make_figures.py
+```
